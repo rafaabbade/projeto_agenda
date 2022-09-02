@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+    <title>Minha agenda</title>
+</head>
+<body>
+    <div class="container"><header>
+        <img src="./images/contatos.png" alt="agenda" >
+        <h1>Minha agenda</h1>
+    </header>
+    <form id="form-agenda">
+        <input type="text" id="nome-contato" required placeholder="Nome do contato">
+        <input type="tel" id="tel-contato" required placeholder="Número de telefone">
+        <select name="tipo" id="tipo-contato">
+            <option value="pessoal">Pessoal</option>
+            <option value="profissional">Profissional</option>
+        </select>
+        <button type="submit">Adicionar +</button>
+    </form>
+    <table cellspacing="0">
+        <thead>
+            <tr>
+                <th>Nome do contato</th>
+                <th>Numéro de telefone</th>
+                <th>Tipo de contato</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>(Eu) Rafael Abbade</td>
+                <td id="mediavalor"> 11988882222</td>
+                <td><img src="./images/sunglasses.png" alt="emoji óculos de sol"></td>
+            </tr>
+        </tfoot>
+    </table>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
